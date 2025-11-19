@@ -10,6 +10,9 @@
     --margin: 16px;    
 }
 
+nav {
+    display: block;
+}
 
 body {
     background: #191919;
