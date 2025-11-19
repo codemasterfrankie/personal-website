@@ -10,8 +10,14 @@
     --margin: 16px;    
 }
 
-nav {
-    display: block;
+.topnav {
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+}
+
+.page:hover {
+    text-decoration: underline;
 }
 
 body {

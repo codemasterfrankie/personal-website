@@ -12,6 +12,17 @@
     --black: #191919;
 }
 
+.topnav {
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+
+}
+
+.page:hover {
+    text-decoration: underline;
+}
+
 body {
     background: var(--bg);
     color: var(--fontColor);

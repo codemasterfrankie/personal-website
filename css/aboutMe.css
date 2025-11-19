@@ -11,9 +11,12 @@
 }
 
 .topnav {
+    float: right;
+}
+
+.topnav li {
     list-style-type: none;
     text-decoration: none;
-    float: right;
 }
 
 .page:hover {
