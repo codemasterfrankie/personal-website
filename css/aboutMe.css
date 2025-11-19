@@ -10,8 +10,9 @@
     --margin: 16px;    
 }
 
-nav {
-    display: block;
+.topnav {
+    list-style-type: none;
+    
 }
 
 body {
