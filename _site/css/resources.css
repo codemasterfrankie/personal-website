@@ -15,6 +15,7 @@
 .topnav {
     float: right;
     margin-top: var(--margin);
+    overflow: hidden;
 }
 
 .topnav a {
