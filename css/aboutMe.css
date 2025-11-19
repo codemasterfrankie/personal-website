@@ -13,6 +13,7 @@
 .topnav {
     list-style-type: none;
     text-decoration: none;
+    float: right;
 }
 
 .page:hover {
