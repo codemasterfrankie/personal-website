@@ -13,13 +13,16 @@
 }
 
 .topnav {
-    list-style-type: none;
-    text-decoration: none;
     float: right;
-
 }
 
-.page:hover {
+.topnav a {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.topnav .a:hover {
     text-decoration: underline;
 }
 
