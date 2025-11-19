@@ -12,6 +12,11 @@
     --black: #191919;
 }
 
+.topnav {
+    list-style-type: none;
+    text-decoration: none;
+}
+
 body {
     background: var(--bg);
     color: var(--fontColor);
