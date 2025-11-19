@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.topnav .a:hover {
+.topnav a:hover {
     text-decoration: underline;
 }
 
