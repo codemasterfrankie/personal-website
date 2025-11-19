@@ -14,12 +14,13 @@
     float: right;
 }
 
-.topnav li {
+.topnav a {
     list-style-type: none;
     text-decoration: none;
+    text-align: center;
 }
 
-.page:hover {
+.topnav .a:hover {
     text-decoration: underline;
 }
 
