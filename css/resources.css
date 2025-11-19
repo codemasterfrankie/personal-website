@@ -17,6 +17,10 @@
     text-decoration: none;
 }
 
+.page:hover {
+    text-decoration: underline;
+}
+
 body {
     background: var(--bg);
     color: var(--fontColor);

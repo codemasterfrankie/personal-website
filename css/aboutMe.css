@@ -15,6 +15,10 @@
     text-decoration: none;
 }
 
+.page:hover {
+    text-decoration: underline;
+}
+
 body {
     background: #191919;
     color: #EFEFEF;
