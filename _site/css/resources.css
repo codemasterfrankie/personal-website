@@ -35,6 +35,14 @@ body {
     line-height: 1.4;
 }
 
+h1 {
+    margin: 0;
+    margin-left: var(--margin);
+    font-size: 48px;
+    font-family: var(--sans);
+    font-weight: 900;
+}
+
 h2 {
     margin-top: 64px;
     margin-left: var(--margin);
