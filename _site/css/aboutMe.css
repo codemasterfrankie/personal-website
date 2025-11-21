@@ -10,15 +10,22 @@
     --margin: 16px;    
 }
 
+body {
+    background: #191919;
+    color: #EFEFEF;
+    word-wrap: break-word;
+    line-height: 1.4;
+    display: flex;
+}
 
 .topnav {
     float: right;
-    margin-top: var(--margin);
-    overflow: hidden;
+    margin-top: 0;
     display: flex;
 }
 
 .navlink {
+    padding: 0 1.5rem;
     list-style: none;
 }
 
@@ -51,14 +58,6 @@
     width: 50%;
     transition: width .5s ease;
     /*text-decoration: underline;*/
-}
-
-body {
-    background: #191919;
-    color: #EFEFEF;
-    word-wrap: break-word;
-    line-height: 1.4;
-    display: flex;
 }
     
 
