@@ -23,8 +23,29 @@
     transition: all 0.5s ease-in-out;
 }
 
-.topnav a:hover {
-    text-decoration: underline;
+.topnav a::before,
+.topnav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 4px;
+    transition: width .3s ease;
+}
+
+.topnav a::before {
+    left: 0;
+}
+
+.topnav a::after {
+    right: 0;
+}
+
+.topnav a:hover::before,
+.topnav a:hover::after {
+    width: 50%;
+    transition: width .5s ease;
+    /*text-decoration: underline;*/
 }
 
 body {
