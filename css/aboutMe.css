@@ -17,12 +17,15 @@ body {
     line-height: 1.4;
 }
 
-.topnav {
+
+.topnav ul {
+    list-style-type: none;
     float: right;
     margin-top: 0;
     display: flex;
 }
 
+/* 
 .navlink {
     padding: 0 1.5rem;
     list-style: none;
@@ -56,8 +59,11 @@ body {
 .topnav a:hover::after {
     width: 50%;
     transition: width .5s ease;
-    /*text-decoration: underline;*/
+    /*text-decoration: underline;
 }
+
+*/
+
     
 
 h1 {
