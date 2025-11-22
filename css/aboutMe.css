@@ -18,23 +18,43 @@ body {
 }
 
 
-.topnav ul {
+.topnav {
     list-style-type: none;
     float: right;
     margin-top: 0;
     display: flex;
 }
 
+.topnav .navlink {
+    position: relative;
+    text-decoration: none;
+}
+
+.topnav .navlink::before,
+.topnav .navlink::after {
+    content: ""; /*add content after element*/
+    position: absolute; /*position absolute for pseudo-element*/
+    width: 100%; /* full width*/
+    transform: scaleX(0); /*initial scale of 0 for underline effect*/
+    height: 2px; /* height of underline */
+    bottom: 0; /* align to bottom */
+    left: 0; /* align to left */
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out; /* transition effect for the underline */
+}
+
+.topnav .navlink:hover::before,
+.topnav .navlink:hover::after {
+    transform: scaleX(1); /* scale the underline on hover */
+    transform-origin: bottom left; /* set transform origin */
+}
+
+
+
 /* 
 .navlink {
     padding: 0 1.5rem;
     list-style: none;
-}
-
-.topnav a {
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
 }
 
 .topnav a::before,

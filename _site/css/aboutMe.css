@@ -23,15 +23,14 @@ body {
     display: flex;
 }
 
-.navlink {
-    padding: 0 1.5rem;
-    list-style: none;
+.topnav a {
+    text-decoration: none
 }
 
-.topnav a {
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
+.navlink {
+    position: relative;
+    outline: none;
+    transition: 0.2s;
 }
 
 .topnav a::before,
