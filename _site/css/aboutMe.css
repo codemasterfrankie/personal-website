@@ -1,0 +1,122 @@
+:root {
+    --sans: "Atlas Grotesk", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    --font-size-giant: clamp(3rem);
+    --font-size-large: clamp(1.5rem);
+    --font-size-medium: clamp(1rem);
+    --font-size-small: clamp(15px);
+    --font-weight-bold: 900;
+    --font-weight-normal: 400;
+    --font-weight-thin: 100;
+    --margin: 16px;    
+}
+
+body {
+    background: #191919;
+    color: blueviolet;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+
+.topnav {
+    list-style-type: none;
+    float: right;
+    margin-top: 0;
+    display: flex;
+}
+
+.topnav .navlink {
+    position: relative;
+    text-decoration: none;
+    color: #EFEFEF;
+}
+
+.topnav .navlink::after {
+    content: ''; /*add content after element*/
+    position: absolute; /*position absolute for pseudo-element*/
+    width: 100%; /* full width*/
+    transform: scaleX(0); /*initial scale of 0 for underline effect*/
+    height: 2px; /* height of underline */
+    bottom: 0; /* align to bottom */
+    left: 0; /* align to left */
+    background-color: #EFEFEF;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out; /* transition effect for the underline */
+}
+
+.topnav .navlink:hover::after {
+    transform: scaleX(1); /* scale the underline on hover */
+    transform-origin: bottom left; /* set transform origin */
+}
+
+
+
+/* 
+.navlink {
+    padding: 0 1.5rem;
+    list-style: none;
+}
+
+.topnav a::before,
+.topnav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 4px;
+    transition: width .3s ease;
+}
+
+.topnav a::before {
+    left: 0;
+}
+
+.topnav a::after {
+    right: 0;
+}
+
+.topnav a:hover::before,
+.topnav a:hover::after {
+    width: 50%;
+    transition: width .5s ease;
+    /*text-decoration: underline;
+}
+
+*/
+
+    
+
+h1 {
+    margin: 0;
+    margin-left: var(--margin);
+    font-size: 48px;
+    font-family: var(--sans);
+    font-weight: 900;
+}
+
+h2 {
+    margin-top: 64px;
+    margin-left: var(--margin);
+    font-family: var(--sans);
+    font-weight: var(--font-weight-normal);
+    font-size: 36px;
+}
+
+p {
+    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-large);
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 16px;
+}
+
+a {
+    margin: var(--margin);
+    font-weight: var(--font-weight-thin);
+    font-size: 24px;
+    color: var(--font-color);
+}
+
+.smallParagraph {
+    font-size: var(--font-size-small);
+}
