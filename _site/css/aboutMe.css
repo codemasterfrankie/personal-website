@@ -8,11 +8,13 @@
     --font-weight-normal: 400;
     --font-weight-thin: 100;
     --margin: 16px;    
+    --white: #EFEFEF;
+    --black: #191919;
 }
 
 body {
-    background: #191919;
-    color: #EFEFEF;
+    background: var(--black);
+    color: var(--white);
     word-wrap: break-word;
     line-height: 1.4;
 }
@@ -28,7 +30,7 @@ body {
 .topnav .navlink {
     position: relative;
     text-decoration: none;
-    color: #EFEFEF;
+    color: var(--white);
 }
 
 .topnav .navlink::after {
@@ -39,7 +41,7 @@ body {
     height: 2px; /* height of underline */
     bottom: 0; /* align to bottom */
     left: 0; /* align to left */
-    background-color: #EFEFEF;
+    background-color:  var(--white);
     transform-origin: bottom right;
     transition: transform 0.2s ease-out; /* transition effect for the underline */
 }
