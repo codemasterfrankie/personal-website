@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "dev": "rm -rf _site; npx @11ty/eleventy --serve"
+    "dev": "rm -rf _site; npx @11ty/eleventy --watch --serve"
   },
   "keywords": [],
   "author": "",
