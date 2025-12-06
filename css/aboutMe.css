@@ -51,41 +51,6 @@ body {
     transform-origin: bottom left; /* set transform origin */
 }
 
-
-
-/* 
-.navlink {
-    padding: 0 1.5rem;
-    list-style: none;
-}
-
-.topnav a::before,
-.topnav a::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    width: 0;
-    height: 4px;
-    transition: width .3s ease;
-}
-
-.topnav a::before {
-    left: 0;
-}
-
-.topnav a::after {
-    right: 0;
-}
-
-.topnav a:hover::before,
-.topnav a:hover::after {
-    width: 50%;
-    transition: width .5s ease;
-    /*text-decoration: underline;
-}
-
-*/
-
     
 
 h1 {
@@ -110,6 +75,14 @@ p {
     font-size: 24px;
     line-height: 1.4;
     margin: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: "\21D2";
 }
 
 a {
