@@ -33,6 +33,10 @@ body {
     color: var(--white);
 }
 
+.topnav .navlink.active {
+    text-decoration: underline;
+}
+
 .topnav .navlink::after {
     content: ''; /*add content after element*/
     position: absolute; /*position absolute for pseudo-element*/
