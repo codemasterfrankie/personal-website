@@ -14,6 +14,9 @@ COMMANDS TO REMEMBER
 
 - to merge branches:
 	git checkout main
+	git pull origin main (?)
+	git checkout dev
+	
 	git merge dev
 	- go into main, merge dev into main
 

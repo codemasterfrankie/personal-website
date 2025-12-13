@@ -153,14 +153,18 @@ p {
 .multicol-gallery {
     columns: 25rem;
     column-gap: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
 
     & li {
-        margin-bottom: 2rem;
+        margin: 0;
+        padding: 1rem;
     }
 
     & img {
         display: block;
         width: 100%;
+        height: auto;
     }
 }
 
