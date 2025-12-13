@@ -21,7 +21,7 @@ blurb about projects/aspirations... I'm passionate about the town I live in and 
 
 ---
 
-blurb about artistic portfolio... I'm an avid graphic, studio, and fiber artist and am always knitting a few things at once. Check out my posters, art, and sweaters here.
+blurb about artistic portfolio... I'm an avid graphic, studio, and fiber artist and am always knitting a few things at once. Check out my creative work <a class="internal" href="/art">here</a>.
 
 ---
 

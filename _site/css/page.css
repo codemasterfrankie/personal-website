@@ -150,6 +150,28 @@ p {
 
 }
 
+.multicol-gallery {
+    columns: 25rem;
+    column-gap: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    & li {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    & img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+li.multicol-gallery-img::before {
+    content: none; 
+}
+
 ul {
     list-style: none;
 }
@@ -170,6 +192,10 @@ a {
     font-weight: var(--font-weight-thin);
     font-size: 24px;
     color: var(--font-color);
+}
+
+a.internal {
+    margin: 0;
 }
 
 hr:before, hr:after {

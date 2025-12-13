@@ -1,9 +1,11 @@
-const { eleventyImgTransformPlugIn } =
-	require('@11ty/eleventy-img');
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
-module.exports = function(eleventyConfig) {
-	
-	eleventyConfig.addPassthroughCopy({ "src/public": "/"})
+export default function (eleventyConfig) {
+
+	eleventyConfig.addPassthroughCopy({ "src/public": "/"});
+
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+
 	return {
 		passthroughFileCopy: true,
 		dir: {
@@ -14,15 +16,6 @@ module.exports = function(eleventyConfig) {
 	// this tells eleventy to look for folder named css and copy it through to output folder
 	// aka _site
 
-	// image optimization plugin
-	eleventyConfig.addPlug(eleventyImageTransformPlugin, {
-		formats: ["webp", "svg"],
-		widths: ["1280", null],
-		defaultAttributes: {
-			loading: "lazy",
-			decoding: "async",
-		},
-		svgShortCircuit: true,
-		
-	});
 };
+
+
