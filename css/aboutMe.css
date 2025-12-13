@@ -55,6 +55,12 @@ body {
     transform-origin: bottom left; /* set transform origin */
 }
 
+.header {
+    text-align: center;
+    font-size: 30px;
+    background: orangered;
+}
+
     
 
 h1 {
