@@ -13,6 +13,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background: var(--black);
     color: var(--white);
     word-wrap: break-word;
@@ -53,6 +55,18 @@ body {
 .topnav .navlink:hover::after {
     transform: scaleX(1); /* scale the underline on hover */
     transform-origin: bottom left; /* set transform origin */
+}
+
+.header {
+    height: 25%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    background-image: url('/images/header_background_about_me.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
     
