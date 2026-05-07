@@ -1,0 +1,124 @@
+:root {
+    --sans: "Atlas Grotesk", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    --font-size-giant: clamp(3rem);
+    --font-size-large: clamp(1.5rem);
+    --font-size-medium: clamp(1rem);
+    --font-size-small: clamp(15px);
+    --font-weight-bold: 900;
+    --font-weight-normal: 400;
+    --font-weight-thin: 100;
+    --margin: 16px;    
+    --white: #EFEFEF;
+    --black: #191919;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--black);
+    color: var(--white);
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+
+.topnav {
+    list-style-type: none;
+    float: right;
+    margin-top: 0;
+    display: flex;
+}
+
+.topnav .navlink {
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.topnav .navlink.active {
+    text-decoration: underline;
+}
+
+.topnav .navlink::after {
+    content: ''; /*add content after element*/
+    position: absolute; /*position absolute for pseudo-element*/
+    width: 100%; /* full width*/
+    transform: scaleX(0); /*initial scale of 0 for underline effect*/
+    height: 2px; /* height of underline */
+    bottom: 0; /* align to bottom */
+    left: 0; /* align to left */
+    background-color:  var(--white);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out; /* transition effect for the underline */
+}
+
+.topnav .navlink:hover::after {
+    transform: scaleX(1); /* scale the underline on hover */
+    transform-origin: bottom left; /* set transform origin */
+}
+
+.header {
+    height: 25%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+    
+
+h1 {
+    margin: 0;
+    margin-left: var(--margin);
+    font-size: 48px;
+    font-family: var(--sans);
+    font-weight: 900;
+}
+
+h2 {
+    margin-top: 64px;
+    margin-left: var(--margin);
+    font-family: var(--sans);
+    font-weight: var(--font-weight-normal);
+    font-size: 36px;
+}
+
+p {
+    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-large);
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: "\21D2";
+}
+
+a {
+    margin: var(--margin);
+    font-weight: var(--font-weight-thin);
+    font-size: 24px;
+    color: var(--font-color);
+}
+
+.smallParagraph {
+    font-size: var(--font-size-small);
+}
+
+.content {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    
+}
+
+.center {
+    position: absolute;
+    justify-content: center;
+    place-items: center;
+    margin: auto;
+
+}
