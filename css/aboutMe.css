@@ -64,7 +64,6 @@ body {
     text-align: center;
     font-size: 30px;
 }
-
     
 
 h1 {
@@ -108,4 +107,18 @@ a {
 
 .smallParagraph {
     font-size: var(--font-size-small);
+}
+
+.content {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    
+}
+
+.center {
+    position: absolute;
+    justify-content: center;
+    place-items: center;
+    margin: auto;
+
 }
