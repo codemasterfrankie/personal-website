@@ -1,26 +1,19 @@
 ﻿---
-layout: page.liquid
-title: home
+layout: page.html
+title: Hi. I'm Jaden.
 ---
 
+# {{ title }}
+_web developer, fiber-artist, part-time farmer, forest garden cultivator, composter, ordained FSM minister..._
 
-<!DOCTYPE html>
-<html lang="en">
-	
-<body>
-<section class="content">
+And welcome to my website!
 
-	<div class="topnav">
-			<a href="/index" class="navlink">home</a>
-            <a href="/aboutMe" class="navlink">about</a>
-            <a href="/misc" class="navlink">misc</a>
-                
-        </div>
+blurb about me... I'm an aspiring freelance web developer and graphic designer who loves efficiency.
 
-	<h1 class="center">Hi. I'm Jaden.</h1>
+blurb about projects/aspirations... I'm passionate about the town I live in and encouraging community through collaboration. I have worked with an educational farm to create a product that allows for calculation and tracking of propper livestock nutrition during gestation. I will be working with Ithaca College faculty to develop a special app to enhance Ithacans' experiences of Porchfest. I will be a part of developing the Ithaca Times' latest website devoted to science and innovation on local and global scales. Check out my portfolio for more.
 
-</section>
+blurb about artistic portfolio... I'm an avid graphic, studio, and fiber artist and am always knitting a few things at once. Check out my posters, art, and sweaters here.
 
-</body>
-</html>
+blurb about contact me... If youre interested in learning more about me or what I can do for you, I can be reached at whatsup@jadenrieck.com (_I'll do my best to respond within two business days_)
+
 		
