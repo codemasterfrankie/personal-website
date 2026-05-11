@@ -65,6 +65,11 @@ body {
     font-size: 30px;
 }
     
+.footer {
+    text-align: center;
+    margin: 16px;
+
+}
 
 h1 {
     margin: 0;

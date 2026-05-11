@@ -1,6 +1,7 @@
 ---
 layout: page.html
 title: About Me
+header: About Me
 ---
 
 # {{ title }}

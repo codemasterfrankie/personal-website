@@ -1,6 +1,7 @@
 ﻿---
 layout: page.html
-title: Hi. I'm Jaden.
+title: Home
+header: Hi. I'm Jaden.
 ---
 
 # {{ title }}
