@@ -1,10 +1,10 @@
 ﻿---
-layout: page.html
+layout: page.liquid
 title: Home
 header: Hi. I'm Jaden.
 ---
 
-# {{ title }}
+# {{ header }}
 _web developer, fiber-artist, part-time farmer, forest garden cultivator, composter, ordained FSM minister..._
 
 And welcome to my website!
