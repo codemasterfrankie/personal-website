@@ -22,25 +22,26 @@ body {
 }
 
 
-.nav {
+.topnav {
     list-style-type: none;
     float: right;
     margin: var(--margin) var(--margin) var(--margin) var(--margin);
     display: flex;
+    padding: 0;
 }
 
-.nav .navlink {
+.topnav .navlink {
     position: relative;
     text-decoration: none;
     color: var(--white);
     padding: 0;
 }
 
-.nav .navlink .active {
+.topnav .navlink .active {
     text-decoration: underline;
 }
 
-.nav .navlink::after {
+.topnav .navlink::after {
     content: ''; /*add content after element*/
     position: absolute; /*position absolute for pseudo-element*/
     width: 100%; /* full width*/
@@ -53,18 +54,22 @@ body {
     transition: transform 0.2s ease-out; /* transition effect for the underline */
 }
 
-.nav .navlink:hover::after {
+.topnav .navlink:hover::after {
     transform: scaleX(1); /* scale the underline on hover */
     transform-origin: bottom left; /* set transform origin */
 }
 
 .sidenav {
+    border-style: solid;
+    border-color: blue;
+    list-style-type: none;
+    float: right;
+    position: relative;
+    /*margin: var(--margin) var(--margin) var(--margin) var(--margin);*/
     display: block;
-    padding-left: 0;
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 100%;
-    padding-bottom: 100%;
+    padding: 0;
+    /*margin-bottom: 100%;
+    padding-bottom: 100%;*/
 }
 
 li .sidenav {
