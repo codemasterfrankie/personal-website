@@ -1,5 +1,5 @@
 ---
-layout: page.html
+layout: page.liquid
 title: Misc
 header: Things I Found on The Internet
 ---

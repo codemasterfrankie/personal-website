@@ -22,24 +22,25 @@ body {
 }
 
 
-.topnav {
+.nav {
     list-style-type: none;
     float: right;
-    margin-top: 0;
+    margin: var(--margin) var(--margin) var(--margin) var(--margin);
     display: flex;
 }
 
-.topnav .navlink {
+.nav .navlink {
     position: relative;
     text-decoration: none;
     color: var(--white);
+    padding: 0;
 }
 
-.topnav .navlink.active {
+.nav .navlink .active {
     text-decoration: underline;
 }
 
-.topnav .navlink::after {
+.nav .navlink::after {
     content: ''; /*add content after element*/
     position: absolute; /*position absolute for pseudo-element*/
     width: 100%; /* full width*/
@@ -52,10 +53,24 @@ body {
     transition: transform 0.2s ease-out; /* transition effect for the underline */
 }
 
-.topnav .navlink:hover::after {
+.nav .navlink:hover::after {
     transform: scaleX(1); /* scale the underline on hover */
     transform-origin: bottom left; /* set transform origin */
 }
+
+.sidenav {
+    display: block;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 100%;
+    padding-bottom: 100%;
+}
+
+li .sidenav {
+    margin-left: 0;
+}
+
 
 .header {
     height: 25%;
