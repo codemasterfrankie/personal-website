@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jaden Rieck &bull; Found</title>
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+	<!-- this navbar will be on every page that uses page.liquid as layout-->
+			<div class="topnav">
+                <a href="/index" class="navlink ">home</a>
+                <a href="/aboutMe" class="navlink ">about</a>
+
+				<div class="dropdown">
+				<a class="navlink active">miscellaneous</a>
+			<!-- here is the dropdown -->
+				<div class="dropdown-content">
+				<li><a href="/tech" class="navlink">tech</a></li>
+				<li><a href="/art" class="navlink">art</a></li>
+				<li><a href="/found" class="navlink">found</a></li>
+				<li><a href="/contact" class="navlink">contact</a></li>
+			</div>
+			</div>
+			</div>
+	
+	<body>
+	<h1>Things I Found on The Internet</h1>
+<h2>Websites</h2>
+<ul>
+<li><a href="https://slashdot.org/"><em>Slashdot - News for Nerds</em></a></li>
+<li><a href="https://libraryofbabel.info/"><em>The Library of Babel</em></a></li>
+<li><a href="https://theuselessweb.com/"><em>The Useless Website</em></a></li>
+<li><a href="https://potato.cheap/"><em>The &quot;Cheap&quot; Web</em></a></li>
+<li><a href="https://pudding.cool/projects/clocks/songs/"><em>The Pudding</em></a></li>
+</ul>
+<h2>Newsletters</h2>
+<ul>
+<li><a href="https://lindynewsletter.beehiiv.com/"><em>The Lindy Newsletter</em></a></li>
+<li><a href="https://www.kenklippenstein.com/"><em>Ken Klippenstein</em></a></li>
+<li><a href="https://www.garbageday.email/?utm_source=www.garbageday.email&amp;utm_medium=newsletter&amp;utm_campaign=we-did-it-zo&amp;_bhlid=e10a59465008aa5cc1d51e22d4b2f2ebf425dac0&amp;last_resource_guid=Post%3Aba6f2372-3ca9-447a-a399-4c7d9008aced&amp;jwt_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWJzY3JpYmVyX2lkIjoiZGE2OTVjZTMtZWIyMi00MzAyLTg4MzQtYjljMGNmYWMyM2Y4IiwicHVibGljYXRpb25faWQiOiJjYzFhNDViMy0wYjNlLTQ1OGEtYjU2MC1kZTk0MGZjMDUzZjIiLCJhY2Nlc3NfdHlwZSI6InJlYWQtb25seSIsImV4cCI6MTc2MjU0NzA5OSwiaXNzIjoiaHR0cHM6Ly9hcHAuYmVlaGlpdi5jb20iLCJpYXQiOjE3NjIzNzQyOTl9.u3bUp2XIIijJ1sDMsT8snIBUm3L1GPhMQ99XZCuQvD8"><em>Garbage Day by Ryan Broderick</em></a></li>
+<li><a href="https://www.experimental-history.com/"><em>Experimental History by Adam Mastroianni</em></a></li>
+</ul>
+<h2>Blog Posts</h2>
+<ul>
+<li><a href="https://taylor.town/crowpower?utm_source=substack&amp;utm_medium=email"><em>100,000,000 CROWPOWER and no horses on the moon</em></a></li>
+</ul>
+
+	<div class="footer"><i>Copyright 2025 Jaden Rieck</i></div>
+
+	
+	<script>
+		document.querySelectorAll('.navlink').forEach(link => {
+			link.addEventListener('click', function(e) {
+				e.preventDefault();
+				const href = this.href;
+				
+				// do nothing if clicking already active link
+				if (this.classList.contains('active')) return;
+
+				// find currently active link, makes it recede
+				const activeLink = document.querySelector('.navlink.active');
+				if (activeLink) {
+					activeLink.classList.add('receding');
+				}
+
+				
+				setTimeout(() => {
+					window.location.href = href;
+				}, 200);
+				})
+			
+		});
+	</script>
+</body>
+</html>
