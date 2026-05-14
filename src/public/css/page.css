@@ -23,7 +23,6 @@ body {
 
 
 .topnav {
-    border-color: green;
     list-style-type: none;
     float: right;
     margin: var(--margin) var(--margin) var(--margin) var(--margin);
@@ -35,11 +34,6 @@ body {
     position: relative;
     text-decoration: none;
     color: var(--white);
-    padding: 0;
-}
-
-.topnav .navlink .active {
-    text-decoration: underline;
 }
 
 .topnav .navlink::after {
@@ -62,18 +56,26 @@ body {
 
 .dropdown {
     margin-top: var(--margin);
-    float: right;
-    position: relative;
     overflow: hidden;
-    padding: 0;
+    max-width: 200px;    
+}
+
+.dropdown a {
+    padding-bottom: 3px;
 }
 
 
 /* should be hidden by defaule */
 .dropdown-content {
+    background-color: var(--black);
+    box-shadow: -10px 10px 10px 8px var(--black);
+    padding-left: var(--margin);
+    padding-bottom: var(--margin);
+    right: var(--margin);
+    position: absolute;
     text-align: right;
     /* Hide properties */
-    visibility: hidden; /* Prevent interaction */
+    visibility: none; /* Prevent interaction */
     opacity: 0; /* Fade out */
     max-height: 0; /* Collapse height */
     overflow: hidden; /* Hide overflow content */
@@ -83,9 +85,7 @@ body {
         opacity 0.3s ease, 
         max-height 0.4s ease, 
         visibility 0.3s ease;
-}
-    
-}
+}    
 
 .dropdown:hover .dropdown-content {
     visibility: visible;
