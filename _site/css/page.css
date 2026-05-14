@@ -62,41 +62,36 @@ body {
 
 .dropdown {
     margin-top: var(--margin);
-    border-style: solid;
-    border-color: blue;
-    list-style-type: none;
     float: right;
     position: relative;
-    /*margin: var(--margin) var(--margin) var(--margin) var(--margin);*/
-    display: block;
+    overflow: hidden;
     padding: 0;
-    /*margin-bottom: 100%;
-    padding-bottom: 100%;*/
 }
 
-.dropdown .dropbtn {
-    
-}
 
 /* should be hidden by defaule */
 .dropdown-content {
-    display: none;
+    text-align: right;
+    /* Hide properties */
+    visibility: hidden; /* Prevent interaction */
+    opacity: 0; /* Fade out */
+    max-height: 0; /* Collapse height */
+    overflow: hidden; /* Hide overflow content */
     
-    
+    /* Transitions: Animate opacity and max-height */
+    transition: 
+        opacity 0.3s ease, 
+        max-height 0.4s ease, 
+        visibility 0.3s ease;
 }
-
-.dropdown-content a {
-
+    
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    max-height: 800px;
 }
-
-.dropdown li::before {
-    text-decoration: none;
-}
-
 
 .header {
     height: 25%;
