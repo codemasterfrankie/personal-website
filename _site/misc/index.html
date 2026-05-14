@@ -8,17 +8,20 @@
 </head>
 <body>
 	<!-- this navbar will be on every page that uses page.liquid as layout-->
-	
 			<div class="topnav">
                 <a href="/index" class="navlink">home</a>
                 <a href="/aboutMe" class="navlink">about</a>
-				<a href="/misc" class="navlink">misc</a>
+
+				<div class="dropdown">
+				<a class="navlink">misc</a>
+			<!-- here is the dropdown -->
+				<div class="dropdown-content">
+				<li><a href="/misc" class="navlink">tech</a></li>
+				<li><a href="/misc" class="navlink">art</a></li>
+				<li><a href="/misc" class="navlink">found</a></li>
+				<li><a href="/misc" class="navlink">contact</a></li>
 			</div>
-				<!-- here is the vertical nav bar -->
-			<div class="sidenav">
-				<li><a href="/misc" class="navlink">heres a link</a></li>
-				<li><a href="/misc" class="navlink">another link</a></li>
-				<li><a href="/misc" class="navlink">oopppppp</a></li>
+			</div>
 			</div>
 	
 	<h1>Things I Found on The Internet</h1>
