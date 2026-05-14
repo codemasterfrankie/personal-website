@@ -23,6 +23,7 @@ body {
 
 
 .topnav {
+    border-color: green;
     list-style-type: none;
     float: right;
     margin: var(--margin) var(--margin) var(--margin) var(--margin);
@@ -59,7 +60,8 @@ body {
     transform-origin: bottom left; /* set transform origin */
 }
 
-.sidenav {
+.dropdown {
+    margin-top: var(--margin);
     border-style: solid;
     border-color: blue;
     list-style-type: none;
@@ -72,8 +74,27 @@ body {
     padding-bottom: 100%;*/
 }
 
-li .sidenav {
-    margin-left: 0;
+.dropdown .dropbtn {
+    
+}
+
+/* should be hidden by defaule */
+.dropdown-content {
+    display: none;
+    
+    
+}
+
+.dropdown-content a {
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown li::before {
+    text-decoration: none;
 }
 
 
