@@ -8,11 +8,11 @@
 </head>
 	<!-- this navbar will be on every page that uses page.liquid as layout-->
 			<div class="topnav">
-                <a href="/index" class="navlink">home</a>
-                <a href="/aboutMe" class="navlink">about</a>
+                <a href="/index" class="navlink {% if page.url == '/' %}active{% endif %}">home</a>
+                <a href="/aboutMe" class="navlink {% if page.url == '/aboutMe/' %}active{% endif %}">about</a>
 
 				<div class="dropdown">
-				<a class="navlink">miscellaneous</a>
+				<a class="navlink {% if page.url == '/tech/' or  page.url == '/art/' or page.url == '/found/' or page.url == '/contact/'%}active{% endif %}">miscellaneous</a>
 			<!-- here is the dropdown -->
 				<div class="dropdown-content">
 				<li><a href="/misc" class="navlink">tech</a></li>
@@ -26,5 +26,27 @@
 	<body>
 	{{ content }}
 	<div class="footer"><i>Copyright 2025 Jaden Rieck</i></div>
+
+	{% # the below was added by claude and I %}
+	<script>
+		document.querySelectorAll('.navlink').forEach(link => {
+			link.addEventListener('click', function(e) {
+				e.preventDefault();
+				const href = this.href;
+				
+				// find currently active link, makes it recede
+				const activeLink = document.querySelector('.navlink.active');
+				if (activeLink) {
+					activeLink.classList.add('receding');
+				}
+
+				//this.classList.add('receding');
+				setTimeout(() => {
+					window.location.href = href;
+				}, 200);
+				})
+			
+		});
+	</script>
 </body>
 </html>

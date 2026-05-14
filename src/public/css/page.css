@@ -54,6 +54,17 @@ body {
     transform-origin: bottom left; /* set transform origin */
 }
 
+.topnav .navlink.active::after {
+    transform: scaleX(1); /* matches state when hovering */
+    transform-origin: bottom left;
+}
+
+/* the below was added by claude and I */
+.topnav .navlink.receding::after {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
 .dropdown {
     margin-top: var(--margin);
     overflow: hidden;
