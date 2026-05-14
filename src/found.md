@@ -1,6 +1,6 @@
 ---
 layout: page.liquid
-title: Misc
+title: Found
 header: Things I Found on The Internet
 ---
 # {{ header }}

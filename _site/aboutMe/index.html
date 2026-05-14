@@ -15,10 +15,10 @@
 				<a class="navlink ">miscellaneous</a>
 			<!-- here is the dropdown -->
 				<div class="dropdown-content">
-				<li><a href="/misc" class="navlink">tech</a></li>
-				<li><a href="/misc" class="navlink">art</a></li>
-				<li><a href="/misc" class="navlink">found</a></li>
-				<li><a href="/misc" class="navlink">contact</a></li>
+				<li><a href="/tech" class="navlink">tech</a></li>
+				<li><a href="/art" class="navlink">art</a></li>
+				<li><a href="/found" class="navlink">found</a></li>
+				<li><a href="/contact" class="navlink">contact</a></li>
 			</div>
 			</div>
 			</div>
@@ -39,13 +39,16 @@
 				e.preventDefault();
 				const href = this.href;
 				
+				// do nothing if clicking already active link
+				if (this.classList.contains('active')) return;
+
 				// find currently active link, makes it recede
 				const activeLink = document.querySelector('.navlink.active');
 				if (activeLink) {
 					activeLink.classList.add('receding');
 				}
 
-				//this.classList.add('receding');
+				
 				setTimeout(() => {
 					window.location.href = href;
 				}, 200);

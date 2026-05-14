@@ -3,16 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jaden Rieck &bull; {{ title }}</title>
+	<title>Jaden Rieck &bull; Tech</title>
 	<link rel="stylesheet" type="text/css" href="../css/page.css">
 </head>
 	<!-- this navbar will be on every page that uses page.liquid as layout-->
 			<div class="topnav">
-                <a href="/index" class="navlink {% if page.url == '/' %}active{% endif %}">home</a>
-                <a href="/aboutMe" class="navlink {% if page.url == '/aboutMe/' %}active{% endif %}">about</a>
+                <a href="/index" class="navlink ">home</a>
+                <a href="/aboutMe" class="navlink ">about</a>
 
 				<div class="dropdown">
-				<a class="navlink {% if page.url == '/tech/' or  page.url == '/art/' or page.url == '/found/' or page.url == '/contact/'%}active{% endif %}">miscellaneous</a>
+				<a class="navlink active">miscellaneous</a>
 			<!-- here is the dropdown -->
 				<div class="dropdown-content">
 				<li><a href="/tech" class="navlink">tech</a></li>
@@ -24,10 +24,13 @@
 			</div>
 	
 	<body>
-	{{ content }}
+	<h1>Tech Portfolio</h1>
+<p><em><strong>Under construction</strong></em></p>
+<p>This will house links to and pics/descriptions of my coding and computer accomplishments and projects...</p>
+
 	<div class="footer"><i>Copyright 2025 Jaden Rieck</i></div>
 
-	{% # the below was added by claude and I %}
+	
 	<script>
 		document.querySelectorAll('.navlink').forEach(link => {
 			link.addEventListener('click', function(e) {
