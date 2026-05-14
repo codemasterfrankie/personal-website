@@ -104,6 +104,12 @@ body {
     max-height: 800px;
 }
 
+/* claude and I */
+.dropdown:hover > .navlink::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .header {
     height: 25%;
     padding: 0;

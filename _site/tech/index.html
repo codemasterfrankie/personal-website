@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jaden Rieck &bull; Tech</title>
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+	<!-- this navbar will be on every page that uses page.liquid as layout-->
+			<div class="topnav">
+                <a href="/index" class="navlink ">home</a>
+                <a href="/aboutMe" class="navlink ">about</a>
+
+				<div class="dropdown">
+				<a class="navlink active">miscellaneous</a>
+			<!-- here is the dropdown -->
+				<div class="dropdown-content">
+				<li><a href="/tech" class="navlink">tech</a></li>
+				<li><a href="/art" class="navlink">art</a></li>
+				<li><a href="/found" class="navlink">found</a></li>
+				<li><a href="/contact" class="navlink">contact</a></li>
+			</div>
+			</div>
+			</div>
+	
+	<body>
+	<h1>Tech Portfolio</h1>
+<p><em><strong>Under construction</strong></em></p>
+<p>This will house links to and pics/descriptions of my coding and computer accomplishments and projects...</p>
+
+	<div class="footer"><i>Copyright 2025 Jaden Rieck</i></div>
+
+	
+	<script>
+		document.querySelectorAll('.navlink').forEach(link => {
+			link.addEventListener('click', function(e) {
+				e.preventDefault();
+				const href = this.href;
+				
+				// do nothing if clicking already active link
+				if (this.classList.contains('active')) return;
+
+				// find currently active link, makes it recede
+				const activeLink = document.querySelector('.navlink.active');
+				if (activeLink) {
+					activeLink.classList.add('receding');
+				}
+
+				
+				setTimeout(() => {
+					window.location.href = href;
+				}, 200);
+				})
+			
+		});
+	</script>
+</body>
+</html>
