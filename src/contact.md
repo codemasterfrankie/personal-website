@@ -8,4 +8,4 @@ header: Reach Out!
 
 ***Under construction***
 
-This will include why and how to contact me (i.e. please write all emails in a british accent)...
+I can be reached at <u>whatsup@jadenrieck.com</u> (_I'll do my best to respond within two business days_).

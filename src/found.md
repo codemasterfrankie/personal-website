@@ -21,4 +21,6 @@ header: Things I Found on The Internet
 
 ## Blog Posts
 
+- [_Native Apps Should Be Avoided Whenever Possible_](https://nooneshappy.com/article/native-apps-should-be-avoided-whenever-possible/)
 - [_100,000,000 CROWPOWER and no horses on the moon_](https://taylor.town/crowpower?utm_source=substack&utm_medium=email)
+
