@@ -2,13 +2,14 @@
 layout: page.liquid
 title: Home
 header: Hi. I'm Jaden.
+subtitle: web developer, fiber-artist, part-time farmer, forest garden cultivator, composter, ordained FSM minister...
 ---
 
 # {{ header }}
 
 ***Under Construction***
 
-_web developer, fiber-artist, part-time farmer, forest garden cultivator, composter, ordained FSM minister..._
+_{{ subtitle }}_
 
 And welcome to my website!
 
@@ -18,6 +19,6 @@ blurb about projects/aspirations... I'm passionate about the town I live in and 
 
 blurb about artistic portfolio... I'm an avid graphic, studio, and fiber artist and am always knitting a few things at once. Check out my posters, art, and sweaters here.
 
-blurb about contact me... If youre interested in learning more about me or what I can do for you, I can be reached at whatsup@jadenrieck.com (_I'll do my best to respond within two business days_)
+blurb about contact me...
 
 		
