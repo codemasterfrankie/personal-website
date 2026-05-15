@@ -12,7 +12,7 @@
                 <a href="/aboutMe" class="navlink active">about</a>
 
 				<div class="dropdown">
-				<a class="navlink ">miscellaneous</a>
+				<a class="navlink not-button ">miscellaneous</a>
 			<!-- here is the dropdown -->
 				<div class="dropdown-content">
 				<li><a href="/tech" class="navlink">tech</a></li>
@@ -31,13 +31,12 @@
 <p><a href="https://docs.google.com/document/d/1qJfGyytL9OpgfH8Rv-G3AmQy41-RvwVO51-8LwlMBl0/edit?usp=sharing"><em>Resume</em></a></p>
 <h2>Reading List</h2>
 <p>currently reading: <em>Gone Girl, by Gillian Flynn</em></p>
-<hr>
 <p>non-fiction</p>
 <ul>
+<li><em>Strong Female Character, by Fern Brady</em></li>
 <li><em>Talking to Strangers, by Malcolm Gladwell</em></li>
 <li></li>
 </ul>
-<hr>
 <p>fiction</p>
 <ul>
 <li><em>The Answers, by Catherine Lacey</em></li>
@@ -56,6 +55,8 @@
 				
 				// do nothing if clicking already active link
 				if (this.classList.contains('active')) return;
+				if (this.classList.contains('not-button')) return;
+
 
 				// find currently active link, makes it recede
 				const activeLink = document.querySelector('.navlink.active');

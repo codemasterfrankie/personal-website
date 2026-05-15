@@ -12,7 +12,7 @@
                 <a href="/aboutMe" class="navlink ">about</a>
 
 				<div class="dropdown">
-				<a class="navlink ">miscellaneous</a>
+				<a class="navlink not-button ">miscellaneous</a>
 			<!-- here is the dropdown -->
 				<div class="dropdown-content">
 				<li><a href="/tech" class="navlink">tech</a></li>
@@ -29,8 +29,11 @@
 <p><em>web developer, fiber-artist, part-time farmer, forest garden cultivator, composter, ordained FSM minister...</em></p>
 <p>And welcome to my website!</p>
 <p>blurb about me... I'm an aspiring freelance web developer and graphic designer who loves efficiency.</p>
+<hr>
 <p>blurb about projects/aspirations... I'm passionate about the town I live in and encouraging community through collaboration. I have worked with an educational farm to create a product that allows for calculation and tracking of propper livestock nutrition during gestation. I will be working with Ithaca College faculty to develop a special app to enhance Ithacans' experiences of Porchfest. I will be a part of developing the Ithaca Times' latest website devoted to science and innovation on local and global scales. Check out my portfolio for more.</p>
+<hr>
 <p>blurb about artistic portfolio... I'm an avid graphic, studio, and fiber artist and am always knitting a few things at once. Check out my posters, art, and sweaters here.</p>
+<hr>
 <p>blurb about contact me...</p>
 
 	<div class="footer"><i>Copyright 2025 Jaden Rieck</i></div>
@@ -44,6 +47,8 @@
 				
 				// do nothing if clicking already active link
 				if (this.classList.contains('active')) return;
+				if (this.classList.contains('not-button')) return;
+
 
 				// find currently active link, makes it recede
 				const activeLink = document.querySelector('.navlink.active');

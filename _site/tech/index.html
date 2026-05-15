@@ -12,7 +12,7 @@
                 <a href="/aboutMe" class="navlink ">about</a>
 
 				<div class="dropdown">
-				<a class="navlink active">miscellaneous</a>
+				<a class="navlink not-button active">miscellaneous</a>
 			<!-- here is the dropdown -->
 				<div class="dropdown-content">
 				<li><a href="/tech" class="navlink">tech</a></li>
@@ -39,6 +39,8 @@
 				
 				// do nothing if clicking already active link
 				if (this.classList.contains('active')) return;
+				if (this.classList.contains('not-button')) return;
+
 
 				// find currently active link, makes it recede
 				const activeLink = document.querySelector('.navlink.active');

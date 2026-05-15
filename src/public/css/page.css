@@ -172,6 +172,21 @@ a {
     color: var(--font-color);
 }
 
+hr:before, hr:after {
+    content: '';
+    background: #FED279;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #3F7963;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(45deg) translatey(calc(50% + 3px));
+    transform-origin: center;
+    left: calc(5% + 11px);
+    z-index:2;
+}
+
+
 .smallParagraph {
     font-size: var(--font-size-small);
 }
