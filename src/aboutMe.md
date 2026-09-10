@@ -2,7 +2,7 @@
 layout: page.liquid
 title: About
 header: About
-currently-reading: Gone Girl, by Gillian Flynn
+currently-reading: 1Q84, by Haruki Murakami
 ---
 
 # {{ header }}
@@ -20,12 +20,13 @@ currently reading: _{{ currently-reading }}_
 
 
 non-fiction
+- _Hannah's Forhead and Other Horror Stories, by David Thorne (satire)
 - _Strong Female Character, by Fern Brady_
 - _Talking to Strangers, by Malcolm Gladwell_
-- 
 
 
 fiction
+- _Gone Girl, by Gillian Flynn
 - _The Answers, by Catherine Lacey_
 - _Kafka on the Shore, by Haruki Murakami_
 - _The Latecomer, by Jean Hanff Korelitz_
