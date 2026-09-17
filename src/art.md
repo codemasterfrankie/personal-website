@@ -11,10 +11,9 @@ header: My Creations
 This is where I will display and discuss my various creations, patterns I use, all the art. A museum, of sorts...
 
 <ul class="grid-gallary">
-    <li img src="/media/img-1-a.jpg" alt="..."></li>
-    <li img src="/media/img-1-p.jpg" alt="..."></li>
-    <li img src="/media/img-2-p.jpg" alt="..."></li>
-    <li img src="/media/img-3-p.jpg" alt="..."></li>
-    <li img src="/media/img-4-p.jpg" alt="..."></li>
-    <li img src="/media/img-5-p.jpg" alt="..."></li>
-    </ul>
+    <li class="grid-gallery-img"><img src="../media/img-a-1.jpeg" alt="..."></li>
+    <li class="grid-gallery-img"><img src="../media/img-p-1.jpeg" alt="..."></li>
+    <li class="grid-gallery-img"><img src="../media/img-p-2.jpeg" alt="..."></li>
+    <li class="grid-gallery-img"><img src="../media/img-p-3.jpeg" alt="..."></li>
+    <li class="grid-gallery-img"><img src="../media/img-p-4.jpeg" alt="..."></li>
+</ul>
