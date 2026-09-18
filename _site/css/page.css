@@ -164,6 +164,10 @@ p {
     }
 }
 
+ul.multicol-gallery {
+    margin-top: 0;
+}
+
 li.multicol-gallery-img::before {
     content: none; 
 }
@@ -188,6 +192,10 @@ a {
     font-weight: var(--font-weight-thin);
     font-size: 24px;
     color: var(--font-color);
+}
+
+a.internal {
+    margin: 0;
 }
 
 hr:before, hr:after {
