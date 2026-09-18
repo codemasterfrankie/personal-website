@@ -164,8 +164,6 @@ p {
     }
 }
 
-
-
 li.multicol-gallery-img::before {
     content: none; 
 }
