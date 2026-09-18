@@ -190,6 +190,10 @@ a {
     color: var(--font-color);
 }
 
+a.internal {
+    margin: 0;
+}
+
 hr:before, hr:after {
     content: '';
     background: #FED279;

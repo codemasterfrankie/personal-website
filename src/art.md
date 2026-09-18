@@ -9,7 +9,6 @@ header: My Creations
 ***Under construction***
 
 This is where I will display and discuss my various creations, patterns I use, all the art. A museum, of sorts...
-
 <ul class="multicol-gallery">
     <li class="multicol-gallery-img"><img src="../media/img-a-1.jpeg" alt="Watercolor painting of pine tees and sun with engraving-style mountains and clouds added in pen."></li>
     <li class="multicol-gallery-img"><img src="../media/img-p-5.jpeg" alt="Fresh garlic bunches, braided with small flowers, rest on a wooden picknick table."></li>
