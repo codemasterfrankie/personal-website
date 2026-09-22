@@ -164,10 +164,6 @@ p {
     }
 }
 
-ul.multicol-gallery {
-    margin-top: 0;
-}
-
 li.multicol-gallery-img::before {
     content: none; 
 }
