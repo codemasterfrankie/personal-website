@@ -194,6 +194,10 @@ a {
     color: var(--font-color);
 }
 
+em {
+    margin: var(--margin);
+}
+
 a.internal {
     margin: 0;
 }

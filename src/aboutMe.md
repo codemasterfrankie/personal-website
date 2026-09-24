@@ -16,16 +16,17 @@ Upon completing their sophomore year at Drexel University, Jaden took the opport
 
 ## Reading List
 
-currently reading: _{{ currently-reading }}_
+CURRENTLY READING
+- _{{ currently-reading }}_
 
 
-non-fiction
+NON-FICTION
 - _Hannah's Forhead and Other Horror Stories, by David Thorne (satire)_
 - _Strong Female Character, by Fern Brady_
 - _Talking to Strangers, by Malcolm Gladwell_
 
 
-fiction
+FICTION
 - _Gone Girl, by Gillian Flynn_
 - _The Answers, by Catherine Lacey_
 - _Kafka on the Shore, by Haruki Murakami_
