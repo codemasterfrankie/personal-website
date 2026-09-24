@@ -198,6 +198,7 @@ a.internal {
     margin: 0;
 }
 
+/*
 hr:before, hr:after {
     content: '';
     background: #FED279;
@@ -211,6 +212,7 @@ hr:before, hr:after {
     left: calc(5% + 11px);
     z-index:2;
 }
+    */
 
 
 .smallParagraph {
