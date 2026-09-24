@@ -73,6 +73,13 @@ ul {
     list-style: none;
 }
 
+li {
+    margin: var(--margin);
+    font-weight: var(--font-weight-thin);
+    font-size: 24px;
+    color: var(--font-color);
+}
+
 li::before {
     content: "\21D2";
 }
