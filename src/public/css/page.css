@@ -151,6 +151,7 @@ p {
 }
 
 .multicol-gallery {
+    margin-top: var(--margin);
     columns: 25rem;
     column-gap: 0;
     padding-left: 4rem;
