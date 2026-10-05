@@ -2,7 +2,7 @@
 layout: page.liquid
 title: About
 header: About
-currently-reading: 1Q84, by Haruki Murakami
+currently-reading: Enshittification, by Cory Doctorow
 ---
 
 # {{ header }}
