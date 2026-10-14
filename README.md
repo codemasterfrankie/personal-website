@@ -1,15 +1,12 @@
-﻿---
-title: Jaden Rieck's Personal Website
-one-liner: A website designed and created by Jaden Rieck.
-description: Welcome! This is a personal website for Jaden Rieck, created for the purposes of passing time, networking/flaunting Jaden's work, and discovering random stuff Jaden and their friends find cool.
-acknowledgements: I want to thank Sam Knight for helping me set this thing up and excitedly explaining websites to a person (me) who only caught about 25%. 
----
-# {{ title }}
+# Jaden Rieck's Personal Website
 
-*{{ one-liner }}*
+*A website designed and created by me, Jaden Rieck, for me (and you)*
 
 ## Description/Overview
-{{ description }}
+Welcome! This my personal website, created for the purposes of passing time, networking/flaunting my work, and keeping track of random stuff my friends and I find cool. I designed, developed, and continue to maintain this website, with help and advice along the way from my friend, Sam.
+
+## To run
+Simply visit [jadenrieck.com](https://jadenrieck.com)
 
 ## Features
 - aboutMe
@@ -18,19 +15,17 @@ acknowledgements: I want to thank Sam Knight for helping me set this thing up an
     - including random/awesome links/articles/newsletters!
 
 ## Built With
-- html
-- css
-- js
+# Languages
+- HTML
+- CSS
+- Javascript
+- Liquid
+
+# Framework
 - 11ty
+
+# Platform
 - Cloudflare
 
 ## Acknowledgements
-{{ acknowledgements }}
-
-*italic*
-**bold**
-- item
-
-This is regular text
-
-> This is a note
+I want to thank Sam Knight for helping me set this thing up and excitedly explaining and re-explaining how it all works while I frantically scribbled notes in the library.
