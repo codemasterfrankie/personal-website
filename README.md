@@ -9,16 +9,16 @@ Welcome! This my personal website, created for the purposes of passing time, net
 Simply visit [jadenrieck.com](https://jadenrieck.com)
 
 ## Built With
-# Languages
+### Languages
 - HTML
 - CSS
 - Javascript
 - Liquid
 
-# Framework
+### Framework
 - 11ty
 
-# Platform
+### Platform
 - Cloudflare
 
 ## Acknowledgements
