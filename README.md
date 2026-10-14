@@ -8,12 +8,6 @@ Welcome! This my personal website, created for the purposes of passing time, net
 ## To run
 Simply visit [jadenrieck.com](https://jadenrieck.com)
 
-## Features
-- aboutMe
-    - including Jaden's bio, resume, accomplishments, and projects
-- resources
-    - including random/awesome links/articles/newsletters!
-
 ## Built With
 # Languages
 - HTML
