@@ -10,7 +10,7 @@ Hours of Operation:\
 Monday - Friday\
 630am - 6pm\
 Weekend\
-10am - 2pm\
+10am - 2pm
 
 If you have questions about me or my work, have comments on or recommendations for this website, or are interested in enlisting my services (craft, tech, advice), send me an email. 
 
