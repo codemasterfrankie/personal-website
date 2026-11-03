@@ -2,7 +2,7 @@
 layout: page.liquid
 title: About
 header: About
-currently-reading: Enshittification, by Cory Doctorow
+currently-reading: One Day, by David Nicholls
 ---
 
 # {{ header }}
@@ -21,12 +21,14 @@ CURRENTLY READING
 
 
 NON-FICTION
+- _Enshitification, by Cory Doctorow_
 - _Hannah's Forhead and Other Horror Stories, by David Thorne (satire)_
 - _Strong Female Character, by Fern Brady_
 - _Talking to Strangers, by Malcolm Gladwell_
 
 
 FICTION
+- _Omon Ra, by Victor Pelevin_
 - _Gone Girl, by Gillian Flynn_
 - _The Answers, by Catherine Lacey_
 - _Kafka on the Shore, by Haruki Murakami_
