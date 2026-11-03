@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/page.css">
 </head>
 	<!-- this navbar will be on every page that uses page.liquid as layout-->
-			<div class="topnav">
+			<nav>
                 <a href="/index" class="navlink {% if page.url == '/' %}active{% endif %}">home</a>
                 <a href="/aboutMe" class="navlink {% if page.url == '/aboutMe/' %}active{% endif %}">about</a>
 
@@ -23,12 +23,11 @@
 				</ul>
 			</div>
 			</div>
-			</div>
+			</nav>
 	
 	<body>
 	<main>
 	{{ content }}
-	<\main>
 	<div class="footer"><i>Copyright 2025 Jaden Rieck</i></div>
 
 	{% # the below was added by claude and I %}
@@ -57,5 +56,6 @@
 			
 		});
 	</script>
+	</main>
 </body>
 </html>
