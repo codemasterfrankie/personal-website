@@ -13,7 +13,7 @@
     --side-margin: 64px;
 }
 
-nav {
+.top-nav {
     list-style-type: none;
     float: right;
     margin: var(--margin) var(--margin) var(--margin) var(--margin);
@@ -21,13 +21,13 @@ nav {
     padding: 0;
 }
 
-nav .navlink {
+.top-nav .navlink {
     position: relative;
     text-decoration: none;
     color: var(--white);
 }
 
-nav .navlink::after {
+.top-nav .navlink::after {
     content: ''; /*add content after element*/
     position: absolute; /*position absolute for pseudo-element*/
     width: 100%; /* full width*/
@@ -40,18 +40,18 @@ nav .navlink::after {
     transition: transform 0.2s ease-out; /* transition effect for the underline */
 }
 
-nav .navlink:hover::after {
+.top-nav .navlink:hover::after {
     transform: scaleX(1); /* scale the underline on hover */
     transform-origin: bottom left; /* set transform origin */
 }
 
-nav .navlink.active::after {
+.top-nav .navlink.active::after {
     transform: scaleX(1); /* matches state when hovering */
     transform-origin: bottom left;
 }
 
 /* the below was added by claude and I */
-nav .navlink.receding::after {
+.top-nav .navlink.receding::after {
     transform: scaleX(0);
     transform-origin: bottom right;
 }
